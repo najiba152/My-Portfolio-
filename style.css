@@ -5,7 +5,7 @@
     background: radial-gradient(circle, #282928, #757c6d);
     width: 100%;
     height: 100%;
-   margin: 0;
+    margin: 0;
     padding: 0;
     }
     
@@ -14,7 +14,7 @@
     width: 500px;
     height: 500px;
     margin-left: 400px;
-    margin-top: 80px;
+    margin-top: 150px;
     border-radius: 5px;
     box-shadow: 5px 5px 5px rgba(180, 206, 163, 0.5);
     border: 1px solid #7eb659;
@@ -60,7 +60,10 @@ transform: scale(1.05);
    
 }
 #navber{
+    z-index: 1;
     height: 80px;
+    display: flex;
+    align-items: center;
     position: fixed;
     justify-content: space-between;
     width: 100%;
@@ -72,7 +75,7 @@ transform: scale(1.05);
     gap: 70px;
     list-style-type: none;
    
-    margin-left: 380px;
+    margin-left: 150px;
     font-weight: bold;
     font-size: 18pt;
     }
@@ -86,11 +89,18 @@ transform: scale(1.05);
 .nav-list li a:hover{
     color: rgb(245, 237, 130);
 }
-.logo{
-   width: 30px;
-   height: auto;
-   display: block;
-   }
+#left-nav {
+    flex-grow: 1;
+}
+#right-nav {
+    flex-grow: 3;
+}
+#mylogo{
+    width: 25%;
+    height: 25%;
+    margin-left: 12px;
+}
+
 
 .H1{
    color: #cff7a1;
@@ -276,3 +286,8 @@ label {
         text-align: center;
         color: #000;
     }
+    @media (max-width:600px) {
+        
+        
+    }
+
